@@ -2,11 +2,12 @@ package com.surdtech;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
-@EnableAuthorizationServer
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 @SpringBootApplication
-public class SimpleAuthorizationServerApplication {
+@EnableResourceServer
+public class AuthorizationServerApplication {
 public static void main(String args[]) {
-	SpringApplication.run(SimpleAuthorizationServerApplication.class,args);
+	SpringApplication.run(AuthorizationServerApplication.class,args);
 
 }
 }
