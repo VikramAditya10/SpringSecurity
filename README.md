@@ -1,20 +1,18 @@
 # SpringSecurity
 
-1. Enabling the Authorization Server
-@EnableAuthorizationServer
+1. Create an OAuth 2.0 Server
 @SpringBootApplication
 
-2. Configure Authorization Server
+@EnableResourceServer
 
-@Configuration
-public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter
+public class AuthorizationServerApplication
 
-3. Add End Users
-@EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Bean
-    @Override
-    public UserDetailsService userDetailsService()
+2. Create Auth Server Configurer
+ublic class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
+3. Create a SecurityConfiguration class
 
-4. 
+4. Build Your Client App (new Spring Boot project)
+
+
+
 
